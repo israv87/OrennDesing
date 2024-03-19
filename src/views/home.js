@@ -71,14 +71,14 @@ const Home = (props) => {
           />
         </div>
         <video
-          src="https://whttps://www.youtube.com/embed/fS4cH2fky5M?autoplay=1&amp;mute=1"
-          loop="true"
-          muted="true"
-          poster="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEwMXx8bWFya2V0aW5nfGVufDB8fHx8MTcxMDgwMzk4NXww&amp;ixlib=rb-4.0.3&amp;w=1500"
-          preload="auto"
-          autoPlay="true"
-          className="home-video"
-        ></video>
+  loop={true}
+  muted={true}
+  autoPlay={true}
+  className="video" // Nota que aquí se usa una cadena, no un objeto
+>
+  <source src="video.mp4" type="video/mp4" />
+  Tu navegador no soporta videos HTML5.
+</video>
       </div>
       <div className="home-about">
         <div className="home-banner">
@@ -86,13 +86,6 @@ const Home = (props) => {
           <span className="home-text01">
             <span>
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-                volutpat turpis. Mauris luctus rutrum mi ut rhoncus. Integer in
-                dignissim tortor. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Sed non volutpat turpis. Mauris luctus rutrum
-                mi ut rhoncus. Integer in dignissim tortor. Sed non volutpat
-                turpis. Mauris luctus rutrum mi ut rhoncus. Integer in dignissim
-                ortor.
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',
@@ -121,7 +114,7 @@ const Home = (props) => {
               </div>
               <div className="home-container07">
                 <GalleryCard2
-                  title="Maku Suchi"
+                  title="Maku Sushi"
                   imageSrc="/334959830_128997123442214_3778094926354358598_n-1500h.jpg"
                   rootClassName="rootClassName3"
                 ></GalleryCard2>
@@ -129,7 +122,7 @@ const Home = (props) => {
             </div>
             <div className="home-container08">
               <GalleryCard2
-                title="Geeksid"
+                title="Geekside"
                 imageSrc="/337557711_3462720947330918_9136830404972638970_n-1500h.jpg"
                 rootClassName="rootClassName"
               ></GalleryCard2>

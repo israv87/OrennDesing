@@ -1002,3 +1002,7 @@
     width: 100%;
   }
 }
+.video {
+  width: 100%; /* O cualquier otro estilo que quieras aplicar */
+  height: auto;
+}
